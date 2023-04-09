@@ -33,5 +33,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HtooKhant-vexix/1-ecommerce-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HtooKhant-vexix/1-ecommerce-web/issues"
+  },
+  "homepage": "https://github.com/HtooKhant-vexix/1-ecommerce-web#readme",
   "description": ""
 }

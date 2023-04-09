@@ -7,6 +7,9 @@
     <title>Vite App</title>
   </head>
   <body>
+    <!-- <button class="btn btn-primary" type="button" >Toggle right offcanvas</button> -->
+
+    
     <div class="shadow-sm sticky-top bg-white">
       <div class="container  ">
         <div class="row ">
@@ -14,11 +17,10 @@
             <div class="d-flex justify-content-between  p-3  ">
               <div class="logo fw-bold fs-3 text-primary">VEXIX</div>
               <div class="icon-con animate__animated cart">
-                <button type="button" class="btn btn-primary btn-large position-relative">
+                <button type="button" class="btn btn-primary btn-large position-relative"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                   <i class="fa-solid me-2 fa-cart-shopping pe-none"></i>Cart
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  <span class="cartCounter position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                     0
-                    <span class="visually-hidden">unread messages</span>
                   </span>
                 </button>
               </div>
@@ -27,6 +29,33 @@
         </div>
       </div>
     </div>
+
+    <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel fs-3 fw-bold">  Cart <span class="cartCounter badge ms-3 bg-primary  fw-bold fs-6">0</span></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="row a">
+          
+        </div>
+      </div>
+      <div class="offcanvas-footer border shadow">
+        <div class="row">
+          <div class="col d-flex justify-content-between px-4 mt-3 mb-2">
+            <h4 class="">Total</h4>
+            <h5 class="fw-bold">$ <span class="totalCost">0</span></h5>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary w-100">
+              <h5>Check Out</h5>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
     <div class="container-md mt-3">
       <div class="row g-4 item-card">
        
